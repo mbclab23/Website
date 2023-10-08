@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Home() {
+  const ref = useRef();
   const [count, setCount] = useState(0);
   return (
     <>
