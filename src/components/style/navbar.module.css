@@ -1,17 +1,24 @@
 .container {
   /* display: flex; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
+  grid-template-columns: 25% 75%;
+  gap: 10vw;
   text-align: center;
-
+  align-items: center;
+  justify-content: center;
   border: 2px solid black;
   height: 10vh;
   width: 100vw;
 }
 
-@media (max-width: 1020px) {
+/* @media (max-width: 1020px) {
   .container {
     display: none;
   }
+} */
+
+.list {
+  display: flex;
+  gap: 5vw;
+  align-items: center;
 }
