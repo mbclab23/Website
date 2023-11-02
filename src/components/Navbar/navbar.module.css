@@ -1,7 +1,6 @@
 .container {
   /* display: flex; */
-  display: grid;
-  grid-template-columns: 25% 75%;
+  display: flex;
   gap: 10vw;
   text-align: center;
   align-items: center;
@@ -9,6 +8,8 @@
   border: 2px solid black;
   height: 10vh;
   width: 100vw;
+  margin: auto;
+
 }
 
 /* @media (max-width: 1020px) {
@@ -21,4 +22,6 @@
   display: flex;
   gap: 5vw;
   align-items: center;
+  justify-content: center;
 }
+

@@ -1,4 +1,4 @@
-import style from "@/components/style/navbar.module.css";
+import style from "@/components/Navbar/navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <>
       <div className={`${style.container}`}>
-        <div className="m-auto">
+      <div className={`${style.list}`}>
           <Link href="/">  
         <Image
         src="/image/MBC.png"
@@ -15,9 +15,10 @@ export default function Navbar() {
         alt="Picture of the author"
         />
         </Link>
-        
         </div>
+
         <div className={`${style.list}`}>
+        <Link href="/Beranda">Kegiatan</Link>
         <Link href="/kegiatan">Kegiatan</Link>
         <Link href="/projek">Projek</Link>
         <Link href="/tentang">Tentang</Link>

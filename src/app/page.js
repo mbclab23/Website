@@ -1,26 +1,16 @@
-import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
+import Hero from "@/components/Hero/Hero";
+import Divisi from "@/components/Divisi/Divisi";
+import Visi from "@/components/VisiMisi/Visi";
 
 export default function Home() {
 
   return (
     <>
-    <div style={{
-       zIndex: -1,
-       position: "fixed",
-       width: "100vw",
-       height: "100vw"
-    }}>
-    <Image src="/Lawrencium.png"
-    alt="bgImage"
-    layout="fill"
-    objectFit="cover"
-    >
-    </Image>
-    </div>
-      
-      <h1 className="text-center">Dashboard</h1>
+   <Hero/>
+   <Divisi/>
+   <Visi/>
     </>
   );
 }
