@@ -1,0 +1,16 @@
+.logo{
+    display: flex;
+    gap: 10px;
+}
+.container{
+    
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  10px;
+    text-align: center;
+    height: 5vw;
+    width: 100vw;   
+    
+}

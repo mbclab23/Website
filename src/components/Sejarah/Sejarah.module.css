@@ -16,7 +16,6 @@
     border: 1px solid rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(20px);
 }
-
 .item {
     width: 100%;
     height: 100%;
@@ -24,4 +23,10 @@
     font-weight: 700;
     word-wrap: break-word;
     gap: 3vw;
+}
+
+.subJudul{
+    font-size: 36px;
+    font-weight: 700;
+    word-wrap: break-word;
 }
