@@ -1,6 +1,13 @@
-const Projek = () => {
+import Projek from "@/components/Projek/Projek";
+
+export default function projek() {
     return (
-        <div>Projek page</div>
-    )
-}
-export default Projek
+      <>
+      <div style={{display: 'flex', alignItems:'center', flexDirection:'column'}}>
+      <Projek/>
+      </div>
+        
+      </>
+    );
+  }
+  
