@@ -12,4 +12,6 @@ html,body {
     max-height: fit-content;
     justify-content: space-between;
   }
-  
+  .container{
+    display: flex;
+  }

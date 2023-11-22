@@ -1,6 +1,10 @@
+import Kontak from "@/components/Kontak/Kontak"
+
 const Lainnya = () => {
     return (
-        <div>Lainnya page</div>
+        <>
+        <Kontak/>
+        </>
     )
 }
 export default Lainnya

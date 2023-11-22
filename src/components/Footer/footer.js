@@ -10,7 +10,6 @@ export default function Footer() {
         <div className={style.logo}>
           <Image width={40} height={40} src="/image/logo/ig.png"/>
           <Image width={40} height={40}  src="/image/logo/linkid.png"/>
-          
         </div>
       </div>
     </>

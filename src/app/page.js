@@ -6,14 +6,14 @@ import Visi from "@/components/VisiMisi/Visi";
 import Sejarah from "@/components/Sejarah/Sejarah";
 
 export default function Home() {
-
   return (
     <>
-   <Hero/>
-   <Divisi/>
-   <Visi/>
-   <Sejarah/>
-   
+    <Hero />
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center',  }}>
+      <Divisi />
+      <Visi />
+      <Sejarah />
+    </div>
     </>
   );
 }

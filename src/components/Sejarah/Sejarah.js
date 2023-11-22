@@ -2,7 +2,7 @@ import React from 'react'
 import style from "@/components/Sejarah/Sejarah.module.css";
 const Sejarah = () => {
     return (
-        <div>
+        <>
             <h1 className={style.judul}>Sejarah</h1>
             <div className={style.kotak}>
                 <div className={style.item}>
@@ -24,7 +24,7 @@ const Sejarah = () => {
 <br/>
 <br/>Dengan perkembangan ini, laboratorium terus menjadi pusat inovasi dan pengetahuan, memainkan peran penting dalam kemajuan ilmu pengetahuan dan teknologi.</div>
             </div>
-            </div>
+            </>
         
     )
 }
