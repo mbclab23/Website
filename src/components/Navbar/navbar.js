@@ -34,13 +34,13 @@ export default function Navbar() {
           <Link href="/kegiatan">Kegiatan</Link>
           <Link href="/projek">Projek</Link>
           <div className={style.dropdown} onMouseLeave={closeDropdown}>
-            <span onClick={toggleDropdown}>Tentang</span>
+            <span onClick={toggleDropdown}>Tentang <i className="fas fa-caret-down"></i></span>
             {showDropdown && (
               <div className={style.dropdownContent}>
-                <Link href="/tentang/subhalaman1">Sub Halaman 1</Link>
-                <Link href="/tentang/subhalaman2">Sub Halaman 2</Link>
-                <Link href="/tentang/subhalaman2">Sub Halaman 2</Link>
-                <Link href="/tentang/subhalaman2">Sub Halaman 2</Link>
+                <Link href="/">Divisi</Link>
+                <Link href="/anggota/pembina">Pembina</Link>
+                <Link href="/anggota/asisten">Asisten</Link>
+                <Link href="/anggota/alumni">Alumni</Link>
               </div>
             )}
           </div>
