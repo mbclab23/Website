@@ -1,7 +1,8 @@
-export default function Pembina() {
+import Pembina from '@/components/Anggota/Pembina/Pembina';
+export default function pembina() {
     return (
       <>
-        <h1>Pembina</h1>
+        <Pembina/>
       </>
     );
   }
