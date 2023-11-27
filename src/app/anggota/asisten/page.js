@@ -1,7 +1,9 @@
-export default function Asisten() {
+import Asisten from "@/components/Anggota/Asisten/Asisten";
+
+export default function asisten() {
     return (
       <>
-        <h1>Asisten</h1>
+        <Asisten/>
       </>
     );
   }

@@ -38,8 +38,7 @@ const Pembina = () => {
     <div>
       
       <h1 className={styles.title}>PEMBINA</h1>
-      <div className={styles.separator}></div>
-      <div className={styles.container} data-aos="fade-up">
+      <div className={styles.container} >
         {pembinaData.map((item) => (
           <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
             <div className={styles.profileCard}>
@@ -47,13 +46,11 @@ const Pembina = () => {
                 <img src={item.image} alt={item.title} />
               </div>
               <div className={styles.caption}>
-                
+                <h3 className={styles.nama}>{item.title}</h3>
                 <h3 className={styles.deskripsi}>{item.posisi}</h3>
-                <p className={styles.deskripsi}>{item.nip}</p>
+                <h3 className={styles.deskripsi}>{item.nip}</h3>
               </div>
             </div>
-            <h1 className="font-bold text-xl">{item.codedosen}</h1>
-            <h3 className={styles.nama}>{item.title}</h3>
           </div>
         ))}
       </div>

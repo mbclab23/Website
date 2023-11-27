@@ -3,7 +3,7 @@ export const id = {
       {
         id: 1,
         title: "Dr.Eng Danu Dwi Sanjoyo, ST., MT.",
-        image: "/pembina/DWJ.png",
+        image: "/image/kosong.png",
         codedosen: "DWJ",
         nip: "14880082",
         posisi: "Pembina Utama",
@@ -11,7 +11,7 @@ export const id = {
       {
         id: 2,
         title: "Sri Astuti, S.T., M.T.",
-        image: "/pembina/TUI.png",
+        image: "/image/kosong.png",
         codedosen: "TUI",
         nip: "20850004",
         posisi: "Pembina",
@@ -19,7 +19,7 @@ export const id = {
       {
         id: 3,
         title: "Sussi, S.Si., MT.",
-        image: "/pembina/SUI.png",
+        image: "/image/kosong.png",
         codedosen: "SUI",
         nip: "20830010",
         posisi: "Pembina",
@@ -27,7 +27,7 @@ export const id = {
       {
         id: 4,
         title: "Bagus Aditya, S.T., M.T",
-        image: "/pembina/BGY.png",
+        image: "/image/kosong.png",
         codedosen: "BGY",
         nip: "20900007",
         posisi: "Pembina",
@@ -35,7 +35,7 @@ export const id = {
       {
         id: 4,
         title: "Dr.Eng. Favian Dewanta, S.T., M.Eng.",
-        image: "/pembina/FAV.png",
+        image: "/image/kosong.png",
         codedosen: "FAV",
         nip: "15870022",
         posisi: "Pembina",

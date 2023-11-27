@@ -1,0 +1,50 @@
+/* Hero.module.css */
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cards {
+    display: flex;
+    overflow: hidden;
+    justify-content: center; /* Centering cards */
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+    width: 400px; /* Custom width */
+    height: 250px; /* Custom height */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%; /* Fill the entire card */
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .card-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .active {
+    transform: scale(1.1); /* Enlarge active card */
+  }
+  

@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useState } from 'react';
-import styles from './Hero.module.css';
+import styles from './Kegiatan.module.css';
 
-const Hero = ({ destinations }) => {
+const Kegiatan = ({ destinations }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -26,11 +26,13 @@ const Hero = ({ destinations }) => {
             className={`${styles.card} ${index === currentIndex ? styles.active : ''}`}
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
+            <div className={styles.kotak}>
             <img src={destination.image} alt={destination.destination} />
             <div className={styles['card-content']}>
               <h3>{destination.destination}</h3>
               <p>{destination.description}</p>
             </div>
+          </div>
           </div>
         ))}
       </div>
@@ -39,4 +41,4 @@ const Hero = ({ destinations }) => {
   );
 };
 
-export default Hero;
+export default Kegiatan;
