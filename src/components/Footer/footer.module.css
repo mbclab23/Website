@@ -3,15 +3,19 @@
     gap: 10px;
 }
 .container{
-    display: flex;
-    border-top: 2px solid black;
+    display: flex; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin:  10px;
     text-align: center;
     height: 5vw;
-    padding: 20px;   
+    padding: 20px;  
+    border-top-width: 1.5px; /* Set your desired border width */
+    border-style: solid;
+    border-image: linear-gradient(to right, #D9D9D900, #ffffff, #D9D9D900); /* Set your gradient colors */
+    border-image-slice: 1; /* Ensure the entire border area is covered by the gradient */
+    box-sizing: border-box; 
     
 }
 

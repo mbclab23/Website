@@ -5,10 +5,18 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
-  height: 10vh;
+  height: 12vh;
   width: 100vw;
   margin: auto;
+  position: fixed;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  border-bottom-width: 1px; 
+  border-style: solid;
+  border-image: linear-gradient(to right, #D9D9D900,  #ffffff, #D9D9D900); 
+  border-image-slice: 1;
+  box-sizing: border-box; 
 
 }
 
@@ -31,7 +39,7 @@
   background-color: transparent;
   min-width: 150px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 11;
 }
 
 .dropdownContent a {
