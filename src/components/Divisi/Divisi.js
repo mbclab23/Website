@@ -24,7 +24,7 @@ function Divisi() {
           </div>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
-            <Link href={item.url} className={styles.see} className={styles.bottompost}>See More</Link>
+            <Link href={item.url} className={styles.see} >See More</Link>
         </div>
         </div>
       ))}
