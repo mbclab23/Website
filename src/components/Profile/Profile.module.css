@@ -7,14 +7,14 @@
     border-top: 1px solid rgba(255, 255, 255, 0.50);
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
-    padding: 40px;
+    padding: 75px;
 }
 .logo{
-    padding-right: 50px;
-    padding-left: 50px;
+    gap: 200px;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+
+    justify-content: center;
 
 }
 .item{

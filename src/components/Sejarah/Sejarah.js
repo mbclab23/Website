@@ -1,32 +1,83 @@
-import React from 'react'
+import React from "react";
 import style from "@/components/Sejarah/Sejarah.module.css";
+import Image from "next/image";
 const Sejarah = () => {
-    return (
-        <>
-            <h1 className={style.judul}>Sejarah</h1>
-            <div className={style.kotak}>
-                <div className={style.item}>
-                
-<br/>**Abad ke-17: Awal Laboratorium Modern**
-<br/>Pada abad ke-17, alkimia menjadi dasar bagi perkembangan laboratorium modern. Robert Boyle, seorang ilmuwan Inggris, dianggap sebagai bapak ilmu kimia modern. Ia mendirikan laboratorium di Oxford, Inggris, pada tahun 1650-an, di mana ia melakukan eksperimen terkait dengan gas dan tekanan.
-<br/>
-<br/>**Abad ke-18: Pemahaman Tentang Reaksi Kimia**
-<br/>Pada abad ke-18, pemahaman tentang reaksi kimia semakin berkembang. Antoine Lavoisier, seorang ilmuwan Prancis, menjalankan eksperimen di laboratoriumnya dan mengembangkan hukum kekekalan massa, yang menjadi dasar teori kimia modern.
-<br/>
-<br/>**Abad ke-19: Perkembangan Laboratorium di Sekolah dan Universitas**
-<br/>Pada abad ke-19, laboratorium kimia dan fisika mulai diperkenalkan di sekolah dan universitas. Louis Pasteur, seorang ilmuwan Prancis, menggunakan laboratorium untuk meneliti mikroorganisme dan menemukan prinsip-prinsip dasar dalam bidang mikrobiologi.
-<br/>
-<br/>**Abad ke-20: Revolusi Teknologi di Laboratorium**
-<br/>Pada abad ke-20, revolusi teknologi membawa perkembangan pesat dalam laboratorium. Alat-alat laboratorium modern, seperti spektrometer, mikroskop elektron, dan kromatografi, memungkinkan ilmuwan untuk melakukan penelitian yang lebih kompleks dan mendalam.
-<br/>
-<br/>**Abad ke-21: Laboratorium Digital dan Koneksi Global**
-<br/>Di era digital saat ini, laboratorium semakin terkoneksi dan menggunakan teknologi informasi untuk berbagi data dan penemuan. Teknologi laboratorium digital memungkinkan ilmuwan untuk melakukan simulasi dan eksperimen kompleks secara virtual.
-<br/>
-<br/>Dengan perkembangan ini, laboratorium terus menjadi pusat inovasi dan pengetahuan, memainkan peran penting dalam kemajuan ilmu pengetahuan dan teknologi.</div>
+  return (
+    <>
+      <h1 className={style.judul}>Sejarah</h1>
+      <div className={style.kotak}>
+        <div className={style.item}>
+          <div>
+            <h1 className={style.tahun}>2019</h1>
+            <h1 className={style.tahun}>2020</h1>
+            <h1 className={style.tahun}>
+              <br />
+            </h1>
+            <h1 className={style.tahun}>2021</h1>
+            <h1 className={style.tahun}>2022 - Seterusnya</h1>
+          </div>
+          <div className={style.img}>
+            <Image
+              width={60}
+              height={60}
+              src="/image/ilustration/garis.svg"
+              alt="Illustration"
+            />
+            <Image
+              width={60}
+              height={60}
+              src="/image/ilustration/bulet.svg"
+              alt="Illustration"
+              className={style.bulet}
+            />
+          </div>
+          <div className={style.desc}>
+            <div>
+              <h1 className={style.subjudul}>MBC Laboratory Berdiri</h1>
+              <div>
+                MBC Laboratory didirikan di bawah naungan Kementerian Komunikasi
+                dan Multimedia (KK NCM) dengan fokus pada tiga bidang utama:
+                Cyber Security, Big Data, dan Multimedia.
+              </div>
             </div>
-            </>
-        
-    )
-}
+            <div>
+              <h1>Kolaborasi dan Integrasi Pengetahuan</h1>
+              <div>
+              MBC Laboratory menjadi wadah kolaboratif bagi peneliti, akademisi,
+              dan profesional. Kolaborasi antar divisi meningkat, memungkinkan
+              integrasi pengetahuan dan keahlian dalam pengembangan solusi
+              lintas disiplin.
+              </div>
+            </div>
+            <div>
+              <h1>Pengembangan Seluruh Divisi</h1>
+              <div>
+              MBC Laboratory memantapkan seluruh divisi, melakukan studi
+              mendalam tentang masing-masing bidang yang ditekuni
+              </div>
+            </div>
+            <div>
+              <h1>Pusat Penelitian Unggulan</h1>
+              <div>
+              MBC Laboratory berkembang menjadi pusat penelitian unggulan yang
+              memimpin dalam pemahaman dan penanganan tantangan kompleks dalam
+              Cyber Security, Big Data, dan Multimedia.
+              </div>
+            </div>
+            <div>
+              <h1>Inovasi dan Kontribusi pada Era Digital</h1>
+              <div>
+              MBC Laboratory terus berkomitmen untuk menyediakan solusi inovatif
+              melalui riset dan pengembangan. Garda terdepan dalam memberikan
+              kontribusi pada perkembangan teknologi dan keamanan di era digital
+              yang terus berkembang.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Sejarah
+export default Sejarah;
