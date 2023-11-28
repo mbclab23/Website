@@ -38,7 +38,7 @@ const Asisten = () => {
   const gt = id.gt;
   const gis = id.gis;
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center',  }}>
       <h1 className={styles.title}>Asisten Riset</h1>
       <h1 className={styles.title}>Inti Kepengurusan Tahun 2023/2024</h1>
       <div className={styles.container} >

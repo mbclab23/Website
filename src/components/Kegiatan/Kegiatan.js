@@ -17,6 +17,7 @@ const Kegiatan = ({ destinations }) => {
   };
 
   return (
+    <>
         <div className={styles.slider}>
         <h1 className={styles.judul}> Kegiatan</h1>
         <div className={styles.cards}>
@@ -41,6 +42,7 @@ const Kegiatan = ({ destinations }) => {
       <button onClick={goToNext}>Next</button>
       </div>
     </div>
+    </>
   );
 };
 

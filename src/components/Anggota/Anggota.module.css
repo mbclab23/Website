@@ -1,11 +1,11 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Untuk mengisi lebar secara merata */
-  gap: 20px; /* Spasi antara item */
-
+  justify-content: center; 
+  gap: 20px; 
+  width: 80vw ;
   margin-bottom: 10vh;
-  
+  align-items: center;
 }
 .homeContainer {
   height: fit-content;
@@ -22,7 +22,8 @@
 
 
 .profileCard {
-  
+  justify-content: center;
+  align-items: center;
   width: 18vw;
   height: 30vw;
   background: linear-gradient(109deg, rgba(217, 217, 217, 0.20) 0%, rgba(255, 255, 255, 0.02) 100%);

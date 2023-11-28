@@ -35,8 +35,8 @@ const destinations = [
 const kegiatan = () => {
     return (
         <>
-        <div>
-      <h1>  </h1>
+        <div >
+      
       <Kegiatan destinations={destinations} />
         </div>
         </>
