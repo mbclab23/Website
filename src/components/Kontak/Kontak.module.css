@@ -1,29 +1,38 @@
 .container{
-    width: 80% ;
-    height: 100%;
+    width: 80vw ;
+    height: 50vh ;
     background: linear-gradient(109deg, rgba(217, 217, 217, 0.20) 0%, rgba(255, 255, 255, 0.02) 100%);
     box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(20px);
     padding: 50px;
     padding-right: 500px;
+    margin-bottom: 15.9vh;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15.9vh;
 }
 .logo{
     gap: 100px;
 }
 .item{
-    max-width: 600px;
+    max-width: 650px;
 }
 
 .subjudul{
     font-size: 25px;
     font-weight: bold;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
 }
 
+/* .subjudul1{
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+} */
 .judul{
     color: #FFF;
     text-shadow: 0px 6px 15px rgba(255, 255, 255, 0.25);

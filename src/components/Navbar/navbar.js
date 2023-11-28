@@ -40,7 +40,6 @@ export default function Navbar() {
                 <Link href="/">Divisi</Link>
                 <Link href="/anggota/pembina">Pembina</Link>
                 <Link href="/anggota/asisten">Asisten</Link>
-                <Link href="/anggota/alumni">Alumni</Link>
               </div>
             )}
           </div>

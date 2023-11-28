@@ -1,7 +1,7 @@
 export default function Tentang() {
   return (
     <>
-      <h1>Tentang</h1>
+      <h1>  </h1>
     </>
   );
 }

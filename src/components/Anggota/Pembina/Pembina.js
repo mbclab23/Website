@@ -37,7 +37,7 @@ const Pembina = () => {
   return (
     <div>
       
-      <h1 className={styles.title}>PEMBINA</h1>
+      <h1 className={styles.title}>Pembina</h1>
       <div className={styles.container} >
         {pembinaData.map((item) => (
           <div className={styles.homeContainer} key={item.id} data-aos="fade-up">

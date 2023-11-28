@@ -36,7 +36,7 @@ const kegiatan = () => {
     return (
         <>
         <div>
-      <h1>Kegiatan</h1>
+      <h1>  </h1>
       <Kegiatan destinations={destinations} />
         </div>
         </>

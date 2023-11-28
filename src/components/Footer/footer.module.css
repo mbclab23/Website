@@ -16,6 +16,7 @@
     border-image: linear-gradient(to right, #D9D9D900, #ffffff, #D9D9D900); /* Set your gradient colors */
     border-image-slice: 1; /* Ensure the entire border area is covered by the gradient */
     box-sizing: border-box; 
+    position: static;
     
 }
 
