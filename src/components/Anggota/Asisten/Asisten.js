@@ -68,7 +68,7 @@ const Asisten = () => {
               <div className={styles.caption}>
                 <h3 className={styles.nama}>{item.title}</h3>
                 <h3 className={styles.deskripsi}>{item.desc}</h3>
-                <h3 className={styles.deskripsi}>{item.nip}</h3>
+                <h3 className={styles.deskripsi}>{item.divisi}</h3>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Asisten = () => {
               <div className={styles.caption}>
                 <h3 className={styles.nama}>{item.title}</h3>
                 <h3 className={styles.deskripsi}>{item.desc}</h3>
-                <h3 className={styles.deskripsi}>{item.nip}</h3>
+                <h3 className={styles.deskripsi}>{item.divisi}</h3>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Asisten = () => {
               <div className={styles.caption}>
                 <h3 className={styles.nama}>{item.title}</h3>
                 <h3 className={styles.deskripsi}>{item.desc}</h3>
-                <h3 className={styles.deskripsi}>{item.nip}</h3>
+                <h3 className={styles.deskripsi}>{item.divisi}</h3>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ const Asisten = () => {
               <div className={styles.caption}>
                 <h3 className={styles.nama}>{item.title}</h3>
                 <h3 className={styles.deskripsi}>{item.desc}</h3>
-                <h3 className={styles.deskripsi}>{item.nip}</h3>
+                <h3 className={styles.deskripsi}>{item.divisi}</h3>
               </div>
             </div>
           </div>
