@@ -15,7 +15,8 @@
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(20px);
-    padding: 15px;
+    padding: 75px;
+    
 }
 .item {
     width: 100%;
@@ -24,10 +25,33 @@
     font-weight: 700;
     word-wrap: break-word;
     gap: 3vw;
+    display: flex;
 }
 
-.subJudul{
-    font-size: 36px;
-    font-weight: 700;
-    word-wrap: break-word;
+.tahun{
+    margin-bottom:100px;
+    color: #D9D9D9;
+font-family: SF Pro Display;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.subjudul{
+    color: #FFF;
+font-family: SF Pro Display;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.bulet{
+position: absolute;
+top: 0;
+left: 0;
+
+}
+.img{
+    position: relative;
 }

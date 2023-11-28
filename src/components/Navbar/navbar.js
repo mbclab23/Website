@@ -33,6 +33,7 @@ export default function Navbar() {
           <Link href="/">Beranda</Link>
           <Link href="/kegiatan">Kegiatan</Link>
           <Link href="/projek">Projek</Link>
+          <Link href="/prestasi">Prestasi</Link>
           <div className={style.dropdown} onMouseLeave={closeDropdown}>
             <span onClick={toggleDropdown}>Tentang <i className="fas fa-caret-down"></i></span>
             {showDropdown && (
@@ -40,7 +41,6 @@ export default function Navbar() {
                 <Link href="/">Divisi</Link>
                 <Link href="/anggota/pembina">Pembina</Link>
                 <Link href="/anggota/asisten">Asisten</Link>
-                <Link href="/anggota/alumni">Alumni</Link>
               </div>
             )}
           </div>

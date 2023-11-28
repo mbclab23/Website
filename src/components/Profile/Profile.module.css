@@ -6,14 +6,14 @@
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(20px);
-    padding: 40px;
+    padding: 75px;
 }
 .logo{
-    padding-right: 50px;
-    padding-left: 50px;
+    gap: 200px;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+
+    justify-content: center;
 
 }
 .item{

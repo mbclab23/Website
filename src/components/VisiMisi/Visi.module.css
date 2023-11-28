@@ -16,7 +16,7 @@
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(20px);
-    padding: 15px;
+    padding: 75px;
 }
 
 .item {
@@ -25,6 +25,27 @@
     font-size: 24px;
     font-weight: 700;
     word-wrap: break-word;
-    gap: 3vw;
+
     
+}
+
+.subJudul{
+    color: #D9D9D9;
+font-family: SF Pro Display;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 10px;
+}
+
+.desc{
+    color: #D9D9D9;
+font-family: SF Pro Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 20px;
+
 }
