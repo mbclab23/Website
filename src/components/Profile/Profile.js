@@ -16,6 +16,8 @@ const Profile = () => {
           beroperasi di bawah Kementerian Komunikasi dan Multimedia (KK NCM).
           Fokus utama laboratorium ini adalah mempelajari dan mengembangkan
           pengetahuan di bidang Cyber Security, Big Data, dan Multimedia.
+          <br/>
+          <br/>
           Didirikan pada tanggal 4 Oktober 2019, MBC Laboratory telah menjadi
           pusat penelitian yang berdedikasi untuk memahami, mengatasi, dan
           mengembangkan solusi terkini dalam tiga bidang utamanya.

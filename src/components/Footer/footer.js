@@ -8,8 +8,9 @@ export default function Footer() {
           Copyright MBC Laboratory. All Right Reserved.
         </div>
         <div className={style.logo}>
-          <Image width={40} height={40} src="/image/logo/ig.png"/>
-          <Image width={40} height={40}  src="/image/logo/linkid.png"/>
+          <Image width={30} height={30} src="/image/logo/ig.png"/>
+          <Image width={30} height={30}  src="/image/logo/linkedin.png"/>
+          <Image width={30} height={30}  src="/image/logo/Line.png"/>
         </div>
       </div>
     </>

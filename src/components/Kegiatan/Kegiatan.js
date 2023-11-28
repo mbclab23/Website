@@ -17,14 +17,14 @@ const Kegiatan = ({ destinations }) => {
   };
 
   return (
-    <div className={styles.slider}>
-      <button onClick={goToPrevious}>Previous</button>
-      <div className={styles.cards}>
+        <div className={styles.slider}>
+        <h1 className={styles.judul}> Kegiatan</h1>
+        <div className={styles.cards}>
         {destinations.map((destination, index) => (
           <div
-            key={index}
-            className={`${styles.card} ${index === currentIndex ? styles.active : ''}`}
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          key={index}
+          className={`${styles.card} ${index === currentIndex ? styles.active : ''}`}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             <div className={styles.kotak}>
             <img src={destination.image} alt={destination.destination} />
@@ -34,9 +34,12 @@ const Kegiatan = ({ destinations }) => {
             </div>
           </div>
           </div>
-        ))}
+          ))}
       </div>
+      <div className={styles.button}>
+      <button onClick={goToPrevious}>Previous</button>
       <button onClick={goToNext}>Next</button>
+      </div>
     </div>
   );
 };

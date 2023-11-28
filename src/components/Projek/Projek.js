@@ -16,15 +16,15 @@ function Projek() {
             <div className={styles.container}>
             <div className={styles.img}>
             <Image
-              width={100}
-              height={100}
+              width={256}
+              height={256}
               src={item.image}
               alt=""
             />
           </div>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
-            <Link href={item.url}>See More</Link>
+            <Link href={item.url} className={styles.bottompost}>See More</Link>
         </div>
         </div>
       ))}
