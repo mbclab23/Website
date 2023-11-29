@@ -1,8 +1,13 @@
-export default function prestasi() {
+import Prestasi from "@/components/Prestasi/Prestasi"
+
+const Capaian = () => {
     return (
-      <>
-        <h1>prestasi</h1>
-      </>
-    );
-  }
-  
+        <>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center',  }}>
+        <Prestasi/>
+        </div>
+        </>
+
+    )
+}
+export default Capaian

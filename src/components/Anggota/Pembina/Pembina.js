@@ -40,7 +40,7 @@ const Pembina = () => {
       <h1 className={styles.title}>Pembina</h1>
       <div className={styles.container} >
         {pembinaData.map((item) => (
-          <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
+          <div className={styles.homeContainerpembina} key={item.id} data-aos="fade-up">
             <div className={styles.profileCard}>
               <div className={styles.img}>
                 <img src={item.image} alt={item.title} />

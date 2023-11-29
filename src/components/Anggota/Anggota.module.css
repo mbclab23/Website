@@ -19,6 +19,18 @@
   margin-bottom: 10px;
   flex-direction: column;
 }
+.homeContainerpembina {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: calc(20% - 10px); /* Mengatur lebar untuk 4 kolom dengan spasi */
+  flex-basis: calc(25% - 10px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
 
 
 .profileCard {
@@ -33,7 +45,9 @@
   backdrop-filter: blur(20px);
   border-top: 1px solid rgba(255, 255, 255, 0.50);
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
+
 
 .caption{
   align-items: center;

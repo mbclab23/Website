@@ -13,13 +13,16 @@ const Visi = () => {
           dan merancang riset yang memberikan dampak positif dan mengikuti
           perkembangan teknologi masa kini serta menjadi lingkungan yang
           membentuk, mematangkan, dan mempersiapkan skill asisten MBC Laboratory
-          agar dapat bersaing di Industri. -- Kawah Candradimuka
+          agar dapat bersaing di Industri. 
+          <br/>
+          -- Kawah Candradimuka
           </div>
         </div>
         <div className={style.item}>
-          <h1 className={style.subJudul}>Misi</h1>
+          <h1 className={style.subJudul}><br/>Misi</h1>
+          
           <div className={style.desc}>
-          <br/>1. Menjadi lingkungan yang mendukung pembelajaran dan penelitian jangka
+          1. Menjadi lingkungan yang mendukung pembelajaran dan penelitian jangka
           panjang.
           <br/>2. menciptakan lingkungan yang fokus pada pertumbuhan pribadi
           dan profesional serta mendukung career
