@@ -1,40 +1,52 @@
 'use client'
-
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './Hero.module.css';
 
-const Hero = ({ destinations }) => {
+const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef(null);
 
-  const goToPrevious = () => {
-    const index = (currentIndex - 1 + destinations.length) % destinations.length;
-    setCurrentIndex(index);
+  // Fungsi untuk menggeser slide ke gambar berikutnya
+  const nextSlide = () => {
+    const newIndex = currentIndex === 3 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
   };
 
-  const goToNext = () => {
-    const index = (currentIndex + 1) % destinations.length;
-    setCurrentIndex(index);
-  };
+  // Efek samping untuk mengatur interval geser slide setiap beberapa detik
+  useEffect(() => {
+    const slider = sliderRef.current;
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Ganti angka ini dengan interval yang diinginkan (dalam milidetik)
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentIndex]);
 
   return (
-    <div className={styles.slider}>
-      <button onClick={goToPrevious}>Previous</button>
-      <div className={styles.cards}>
-        {destinations.map((destination, index) => (
-          <div
-            key={index}
-            className={`${styles.card} ${index === currentIndex ? styles.active : ''}`}
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            <img src={destination.image} alt={destination.destination} />
-            <div className={styles['card-content']}>
-              <h3>{destination.destination}</h3>
-              <p>{destination.description}</p>
-            </div>
-          </div>
-        ))}
+    <div>
+    
+    <div className={styles.container}>
+    <h1 className={styles.judul1}>We Attack</h1>
+    <h1 className={styles.judul2}>We Protect</h1>
+      <div className={styles.sliderWrapper} ref={sliderRef}>
+        <div
+          className={styles.slider}
+          style={{
+            transform: `translateX(-${currentIndex * 100}%)`, // Menggeser gambar berdasarkan indeks
+            transition: 'transform 0.5s ease-in-out', // Efek transisi
+          }}
+        >
+          <img src='/image/hero/Rectangle 30.png' alt='Slide 1' />
+          <img src='/image/hero/Rectangle 31.png' alt='Slide 1' />
+          <img src='/image/hero/Rectangle 32.png' alt='Slide 1' />
+          <img src='/image/hero/Rectangle 33.png' alt='Slide 1' />
+          <img src='/image/hero/Rectangle 34.png' alt='Slide 1' />
+        </div>
       </div>
-      <button onClick={goToNext}>Next</button>
+      
+    </div>
     </div>
   );
 };

@@ -18,8 +18,8 @@ const Kegiatan = ({ destinations }) => {
 
   return (
     <>
-        <div className={styles.slider}>
         <h1 className={styles.judul}> Kegiatan</h1>
+        <div className={styles.slider}> 
         <div className={styles.cards}>
         {destinations.map((destination, index) => (
           <div
@@ -37,11 +37,12 @@ const Kegiatan = ({ destinations }) => {
           </div>
           ))}
       </div>
-      <div className={styles.button}>
+      
+    </div>
+    <div className={styles.button}>
       <button onClick={goToPrevious}>Previous</button>
       <button onClick={goToNext}>Next</button>
       </div>
-    </div>
     </>
   );
 };
