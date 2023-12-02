@@ -34,7 +34,7 @@ const Hero = () => {
         <div
           className={styles.slider}
           style={{
-            transform: `translateX(-${currentIndex * 100}%)`, // Menggeser gambar berdasarkan indeks
+            transform: `translateX(-${currentIndex *  100}%)`, // Menggeser gambar berdasarkan indeks
             transition: 'transform 0.5s ease-in-out', // Efek transisi
           }}
         >

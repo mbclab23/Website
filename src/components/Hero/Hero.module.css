@@ -10,7 +10,7 @@
   display: flex;
 
   scroll-snap-type: mandatory;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth scroll;
 }
 
 .slider-nav a {
@@ -43,11 +43,12 @@
   z-index: 1; /* Agar tulisan tetap di atas slider */
   color: #d9d9d9;
   text-shadow: 0px 6px 15px rgba(255, 255, 255, 0.25);
-  font-family: Carmen Sans;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 128px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  text-align: end;
 }
 .judul1 {
   position: absolute;
@@ -57,7 +58,7 @@
   z-index: 1; /* Agar tulisan tetap di atas slider */
   color: #d9d9d9;
   text-shadow: 0px 6px 15px rgba(255, 255, 255, 0.25);
-  font-family: Carmen Sans;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 128px;
   font-style: normal;
   font-weight: 900;
