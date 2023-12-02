@@ -63,3 +63,15 @@
   font-weight: 900;
   line-height: normal;
 }
+@media screen and (max-width: 768px) {
+  .judul1{
+    font-size: 48px;
+    top: 40%;
+    left: 30%;
+  }
+  .judul2 {
+    font-size: 48px;
+    top: 55%;
+    left: 30%;
+  }
+}

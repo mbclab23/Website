@@ -42,8 +42,8 @@
 }
 
 .subJudul{
-    color: #D9D9D9;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #D9D9D9;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -59,4 +59,39 @@ margin-bottom: 10px;
     font-weight: 700;
     line-height: normal;
 
+}
+
+/* Responsif untuk judul */
+@media screen and (max-width: 768px) {
+    .judul {
+        font-size: 20px;
+        margin-top: 5vh;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+}
+
+/* Responsif untuk container */
+@media screen and (max-width: 768px) {
+    .kotak {
+        width: 75%;
+        padding: 30px;
+    }
+}
+
+/* Responsif untuk isi */
+@media screen and (max-width: 768px) {
+    .desc {
+        font-size: 10px;
+        padding: 2vh 3vw;
+        font-weight: 200;
+    }
+    .logo{
+        display: grid;
+        
+    }
+    .subJudul{
+        font-size: 17px;
+        margin-bottom: 0;
+    }
 }

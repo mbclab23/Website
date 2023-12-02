@@ -25,6 +25,7 @@ export default function Navbar() {
               width={250}
               height={250}
               alt="Logo"
+              className={style.Image}
             />
           </Link>
         </div>

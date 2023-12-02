@@ -1,5 +1,6 @@
+/* Pastikan untuk menyesuaikan konten media query dengan kebutuhan desainmu */
+
 .container {
-  /* display: flex; */
   display: flex;
   gap: 10vw;
   text-align: center;
@@ -17,10 +18,7 @@
   border-image: linear-gradient(to right, #D9D9D900,  #ffffff, #D9D9D900); 
   border-image-slice: 1;
   box-sizing: border-box; 
-
 }
-
-
 
 .list {
   display: flex;
@@ -38,7 +36,7 @@
 
 .dropdownContent {
   cursor: pointer;
-  display: inline-block;
+  display: none; /* Diubah menjadi none agar dropdown tidak terlihat */
   position: absolute;  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,10);
   z-index: 11;
@@ -53,6 +51,7 @@
   display: inline-block;
 }
 
+/* Hilangkan display none saat dropdown dihover */
 .dropdown:hover .dropdownContent {
   display: block;
   justify-content: space-between;
@@ -64,4 +63,33 @@
 /* Atur penampilan link saat dihover jika diinginkan */
 .dropdownContent a:hover {
   background-color: transparent;
+}
+
+/* Penyesuaian untuk tampilan pada layar yang lebih kecil */
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px; /* Ubah sesuai kebutuhanmu */
+  }
+
+  .list {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .dropdownContent {
+    display: none; /* Diubah menjadi none agar dropdown tidak terlihat */
+  }
+
+  .Image {
+    
+    width: 150px;
+    justify-content: left;
+    left: 100px;
+  }
+
+  .list {
+    order: 2; /* Mengatur daftar menu berada di urutan pertama */
+  }
 }

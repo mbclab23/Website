@@ -1,4 +1,6 @@
-
+.slider{
+  display: flex;
+}
 .item{
   margin: 20px;
 }
@@ -68,3 +70,36 @@
     text-align: right;
   
   }
+@media screen and (max-width: 768px){
+  .slider{
+    display: flex;
+    align-items: flex-start;
+  }
+  .container {
+    width: 70%;
+    height: 80vw;
+    padding: 10px;
+    margin: 10px;
+  }
+  .desc{
+    font-size: 10px;
+  }
+  .item {
+    width: 70vw; /* Lebar tiap item */
+    height: auto; /* Biarkan tinggi menjadi 'auto' */
+    gap: 20px; /* Spasi antar item */
+    display: inline-block; /* Menampilkan item dalam satu baris */
+    vertical-align: top; /* Memastikan posisi atas */
+  }
+  .title{
+    font-size: 20px;
+  }
+  .see{
+    font-size: 10px;
+  }
+  .judul{
+    font-size: 20px;
+  }
+
+}
+  
