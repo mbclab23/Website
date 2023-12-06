@@ -46,3 +46,13 @@
     padding: 30px;
   
 }
+
+@media screen and (max-width: 568px) {
+    .container {
+      width: 80%;
+    
+    }
+  
+  
+  }
+  

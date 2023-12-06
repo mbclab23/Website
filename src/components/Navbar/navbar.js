@@ -17,8 +17,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className={`${style.container}`}>
-        <div className={`${style.list}`}>
+      <div className={style.container}>
+        <div className={style.image}>
           <Link href="/">  
             <Image
               src="/image/MBC.png"
@@ -30,7 +30,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className={`${style.list}`}>
+        <div className={style.list}>
           <Link href="/">Beranda</Link>
           <Link href="/kegiatan">Kegiatan</Link>
           <Link href="/projek">Projek</Link>

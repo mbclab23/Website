@@ -6,7 +6,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   margin: auto;
   position: fixed;
@@ -17,7 +17,7 @@
   border-style: solid;
   border-image: linear-gradient(to right, #D9D9D900,  #ffffff, #D9D9D900); 
   border-image-slice: 1;
-  box-sizing: border-box; 
+ 
 }
 
 .list {
@@ -53,7 +53,7 @@
   display: inline-block;
 }
 
-/* Hilangkan display none saat dropdown dihover */
+
 .dropdown:hover .dropdownContent {
   display: block;
   justify-content: space-between;
@@ -66,31 +66,34 @@
   background-color: transparent;
 }
 
-/* Penyesuaian untuk tampilan pada layar yang lebih kecil */
-@media screen and (max-width: 768px) {
-  .container {
-    height: auto;
-    padding: 20px; /* Ubah sesuai kebutuhanmu */
+
+@media screen and (max-width: 568px) {
+  .container{
+
+  }
+  .list {
+    display: none; /* Sembunyikan daftar menu */
+    flex-direction: column; /* Ubah arah tata letak ke kolom */
+    gap: 10px; /* Berikan jarak antar item */
+    text-align: center; /* Pusatkan teks */
+    position: absolute;
+    top: 100%; /* Taruh dropdown di bawah header */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Warna latar belakang */
+    border: 1px solid #ccc; /* Tambahkan border */
+    padding: 10px;
   }
 
-  .list {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 16px;
+  .dropdown {
+    display: block; /* Tampilkan dropdown pada lebar layar kecil */
   }
 
   .dropdownContent {
-    display: none; /* Diubah menjadi none agar dropdown tidak terlihat */
+    display: block; /* Tampilkan konten dropdown */
   }
 
-  .Image {
-    
-    width: 150px;
-    justify-content: left;
-    left: 100px;
-  }
-
-  .list {
-    order: 2; /* Mengatur daftar menu berada di urutan pertama */
+  .dropdown:hover .dropdownContent {
+    display: none; /* Sembunyikan dropdown saat dihover */
   }
 }

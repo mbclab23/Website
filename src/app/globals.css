@@ -11,6 +11,7 @@ html,body {
     width: 100%;
     max-height: fit-content;
     justify-content: space-between;
+    font-size: 16px;
   }
   .container{
     display: flex;

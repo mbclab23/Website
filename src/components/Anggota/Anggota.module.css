@@ -7,7 +7,8 @@
   margin-bottom: 10vh;
   align-items: center;
 }
-.homeContainer {
+.homeContainer,
+.homeContainerpembina {
   height: fit-content;
   display: flex;
   align-items: center;
@@ -15,18 +16,6 @@
   box-sizing: border-box;
   width: calc(25% - 10px); /* Mengatur lebar untuk 4 kolom dengan spasi */
   flex-basis: calc(25% - 20px);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  flex-direction: column;
-}
-.homeContainerpembina {
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  width: calc(20% - 10px); /* Mengatur lebar untuk 4 kolom dengan spasi */
-  flex-basis: calc(25% - 10px);
   margin-top: 10px;
   margin-bottom: 10px;
   flex-direction: column;
@@ -88,4 +77,39 @@
   padding: 30px;
   text-align: center;
 
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    width: 30vw; /* Mengubah lebar container */
+  }
+
+  .homeContainer,
+  .homeContainerpembina {
+    width: calc(50% - 10px); /* Mengatur lebar untuk 2 kolom dengan spasi */
+    flex-basis: calc(50% - 20px);
+  }
+
+  .profileCard {
+    width: 80vw; /* Mengubah lebar card */
+    height: 120vw; /* Mengubah tinggi card */
+    /* Atur properti lainnya sesuai kebutuhan */
+  }
+
+  .title {
+    font-size: 36px; /* Mengurangi ukuran font */
+    margin-top: 10vh; /* Mengubah margin */
+    margin-bottom: 20px; /* Mengubah margin */
+    padding: 20px; /* Mengubah padding */
+  }
+
+  .nama {
+    font-size: 20px; /* Mengurangi ukuran font */
+  }
+
+  .deskripsi {
+    font-size: 16px; /* Mengurangi ukuran font */
+  }
+
+  /* Tambahan sesuai kebutuhan */
 }
