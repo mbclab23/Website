@@ -36,7 +36,7 @@
 
 .dropdownContent {
   cursor: pointer;
-  display: none; /* Diubah menjadi none agar dropdown tidak terlihat */
+  display: none;
   position: absolute;  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,10);
   z-index: 100;
@@ -69,31 +69,35 @@
 
 @media screen and (max-width: 568px) {
   .container{
-
+    justify-content: space-between;
+    padding: 0 9vw;
   }
   .list {
-    display: none; /* Sembunyikan daftar menu */
-    flex-direction: column; /* Ubah arah tata letak ke kolom */
-    gap: 10px; /* Berikan jarak antar item */
-    text-align: center; /* Pusatkan teks */
+    display: none;
+    flex-direction: column; 
+    gap: 10px;
+    text-align: center;
     position: absolute;
-    top: 100%; /* Taruh dropdown di bawah header */
+    top: 100%; 
     left: 0;
     width: 100%;
-    background-color: #ffffff; /* Warna latar belakang */
-    border: 1px solid #ccc; /* Tambahkan border */
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
     padding: 10px;
   }
 
   .dropdown {
-    display: block; /* Tampilkan dropdown pada lebar layar kecil */
+    display: block; 
   }
 
   .dropdownContent {
-    display: block; /* Tampilkan konten dropdown */
+    display: block; 
   }
 
   .dropdown:hover .dropdownContent {
-    display: none; /* Sembunyikan dropdown saat dihover */
+    display: none; 
+  }
+  .image{
+    width: 25vw;
   }
 }
