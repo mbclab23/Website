@@ -99,13 +99,13 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    width: 100vw;
+    
+    
   }
   .container {
-    width: 45vw;
+    width: 60vw;
     height: 50vh;
     padding: 10px;
-    margin: 10px;
   }
   .desc{
     font-size: 10px;

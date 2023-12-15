@@ -84,6 +84,7 @@
 }
 @media screen and (max-width: 568px) {
    .kotak{
+    display: none;
 
    }
 }
