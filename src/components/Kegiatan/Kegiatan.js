@@ -28,13 +28,13 @@ const Kegiatan = ({ destinations }) => {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             <div className={styles.kotak}>
-            <button onClick={goToPrevious}>Previous</button>
+            <button className={styles.geser} onClick={goToPrevious}>Previous</button>
             <img src={destination.image} alt={destination.destination} />
             <div className={styles['card-content']}>
               <h3>{destination.destination}</h3>
               <p>{destination.description}</p>
             </div>
-            <button onClick={goToNext}>Next</button>
+            <button className={styles.geser} onClick={goToNext}>Next</button>
           </div>
           </div>
           ))}
