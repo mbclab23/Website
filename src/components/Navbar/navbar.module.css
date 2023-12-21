@@ -6,7 +6,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   margin: auto;
   position: fixed;
@@ -17,7 +17,7 @@
   border-style: solid;
   border-image: linear-gradient(to right, #D9D9D900,  #ffffff, #D9D9D900); 
   border-image-slice: 1;
-  box-sizing: border-box; 
+ 
 }
 
 .list {
@@ -36,7 +36,7 @@
 
 .dropdownContent {
   cursor: pointer;
-  display: none; /* Diubah menjadi none agar dropdown tidak terlihat */
+  display: none;
   position: absolute;  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,10);
   z-index: 100;
@@ -53,7 +53,7 @@
   display: inline-block;
 }
 
-/* Hilangkan display none saat dropdown dihover */
+
 .dropdown:hover .dropdownContent {
   display: block;
   justify-content: space-between;
@@ -66,31 +66,38 @@
   background-color: transparent;
 }
 
-/* Penyesuaian untuk tampilan pada layar yang lebih kecil */
-@media screen and (max-width: 768px) {
-  .container {
-    height: auto;
-    padding: 20px; /* Ubah sesuai kebutuhanmu */
+
+@media screen and (max-width: 568px) {
+  .container{
+    justify-content: space-between;
+    padding: 0 9vw;
+  }
+  .list {
+    display: none;
+    flex-direction: column; 
+    gap: 10px;
+    text-align: center;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    padding: 10px;
   }
 
-  .list {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 16px;
+  .dropdown {
+    display: block; 
   }
 
   .dropdownContent {
-    display: none; /* Diubah menjadi none agar dropdown tidak terlihat */
+    display: block; 
   }
 
-  .Image {
-    
-    width: 150px;
-    justify-content: left;
-    left: 100px;
+  .dropdown:hover .dropdownContent {
+    display: none; 
   }
-
-  .list {
-    order: 2; /* Mengatur daftar menu berada di urutan pertama */
+  .image{
+    width: 25vw;
   }
 }

@@ -35,7 +35,7 @@ const Pembina = () => {
   const pembinaData = id.pembina;
 
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center',  }}>
       
       <h1 className={styles.title}>Pembina</h1>
       <div className={styles.container} >

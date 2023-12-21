@@ -7,26 +7,15 @@
   margin-bottom: 10vh;
   align-items: center;
 }
-.homeContainer {
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  width: calc(25% - 10px); /* Mengatur lebar untuk 4 kolom dengan spasi */
-  flex-basis: calc(25% - 20px);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  flex-direction: column;
-}
+.homeContainer,
 .homeContainerpembina {
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: calc(20% - 10px); /* Mengatur lebar untuk 4 kolom dengan spasi */
-  flex-basis: calc(25% - 10px);
+  width: calc(25% - 10px); 
+  flex-basis: calc(25% - 20px);
   margin-top: 10px;
   margin-bottom: 10px;
   flex-direction: column;
@@ -88,4 +77,40 @@
   padding: 30px;
   text-align: center;
 
+}
+
+@media screen and (max-width: 568px) {
+  .container {
+    width: 80vw;
+  }
+
+  .homeContainer,
+  .homeContainerpembina {
+    width: calc(50% - 10px); 
+    flex-basis: calc(50% - 20px);
+    display: flex;
+  }
+
+  .profileCard {
+    width: 40vw; 
+  height: 60vw; 
+    
+  }
+
+  .title {
+    font-size: 2rem; 
+    margin-top: 10vh; /* Mengubah margin */
+    margin-bottom: 20px; /* Mengubah margin */
+    padding: 20px; /* Mengubah padding */
+  }
+
+  .nama {
+    font-size: 1rem; /* Mengurangi ukuran font */
+  }
+
+  .deskripsi {
+    font-size: 0.8rem; /* Mengurangi ukuran font */
+  }
+
+  /* Tambahan sesuai kebutuhan */
 }

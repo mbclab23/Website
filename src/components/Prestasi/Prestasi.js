@@ -10,7 +10,7 @@ function Prestasi() {
     <>
     <h1 className={styles.judul}>Prestasi Kami</h1>
     <div className="flex gap-3">
-    
+    <div className={styles.slider}>
       {id.map(item => (
         <div className={styles.item} key={item.id}>
             <div className={styles.container}>
@@ -28,6 +28,7 @@ function Prestasi() {
         </div>
         </div>
       ))}
+    </div>
     </div>
     </>
   );
